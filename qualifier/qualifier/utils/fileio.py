@@ -28,3 +28,16 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+def save_csv(csvpath, qualifying_loans):
+    """Writes data from the list of lists to the CSV file.
+
+    Args:
+        csvpath (Path): The csv file path.
+        qualifying_loans (list): Data to be written to the csv file
+
+    """
+    with open(csvpath, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        for row in qualifying_loans:
+            csvwriter.writerow(row)
