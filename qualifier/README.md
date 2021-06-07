@@ -1,6 +1,6 @@
 # Module 2 Challenge - Loan Qualifier Application
 
-This is a python command-line interface application that allows users to see qualifying loans from lenders quickly and easily. The application works by that taking in a `daily_rate_sheet` of loan criteria from various loan providers, asks the user a number of questions to evaluate their loan eligibility, and then returns to them a "qualifying_loans.csv" csv file with the list of qualifying loans.
+This is a python command-line interface application that allows users to see qualifying loans from lenders quickly and easily. The application works by that taking in a `daily_rate_sheet` of loan criteria from various loan providers, asks the user a number of questions to evaluate their loan eligibility, and then returns to them a qualifying_loans.csv' csv file with the list of qualifying loans.
 
 ---
 
