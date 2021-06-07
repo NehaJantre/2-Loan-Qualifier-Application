@@ -35,5 +35,5 @@ def test_filters():
 
     loan_to_value_ratio = 0.84
 
-    # @TODO: Test the new save_csv code!
-    # YOUR CODE HERE!
+    # Test the new save_csv code!
+    Path("./data/qualifying_loans.csv").exists()
