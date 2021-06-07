@@ -11,7 +11,10 @@ import fire
 import questionary
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import (
+    load_csv,
+    save_csv
+)
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -22,7 +25,6 @@ from qualifier.filters.max_loan_size import filter_max_loan_size
 from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
-
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
@@ -37,7 +39,6 @@ def load_bank_data():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
 
     return load_csv(csvpath)
-
 
 def get_applicant_info():
     """Prompt dialog to get the applicant's financial information.
@@ -108,8 +109,10 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
+    # Complete the usability dialog for savings the CSV Files.
+    csvpath = questionary.text("Enter a file path to a output csv file (.csv):").ask()
+    csvpath = Path(csvpath)
+    save_csv(csvpath, qualifying_loans)
 
 
 def run():
