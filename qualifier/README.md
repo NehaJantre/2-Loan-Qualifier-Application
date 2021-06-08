@@ -30,7 +30,8 @@ Before running the application first install the following dependencies.
 
 ## Examples
 
-This section should include screenshots, code blocks, or animations showing how your project works.
+Qualified loan data written to the csv file
+![Loan Qualifier data in csv file](Images/csv_output.png)
 
 ---
 
@@ -44,7 +45,7 @@ python app.py
 
 Upon launching the loan qualifier application you will be greeted with the following prompts.
 
-![Loan Qualifier Prompts](Images/loan_qalifier.png)
+![Loan Qualifier Prompts](Images/terminal_input_and_output.png)
 
 ---
 
