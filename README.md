@@ -31,7 +31,7 @@ Before running the application first install the following dependencies.
 ## Examples
 
 Qualified loan data written to the csv file
-![Loan Qualifier data in csv file](qualifier/Images/csv_output.png)
+![Loan Qualifier data in csv file](qualifier/images/csv_output.png)
 
 ---
 
@@ -45,7 +45,7 @@ python app.py
 
 Upon launching the loan qualifier application you will be greeted with the following prompts.
 
-![Loan Qualifier Prompts](qualifier/Images/terminal_input_and_output.png)
+![Loan Qualifier Prompts](qualifier/images/terminal_input_and_output.png)
 
 ---
 
